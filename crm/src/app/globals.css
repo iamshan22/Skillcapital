@@ -2,26 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    .main{
+      /* width: 100%; */
+     background:transparent;
+     color: #2c2525; 
+     line-height: 22px; 
+     font-size: 16px;
+     font-family: poppins,sans-serif; 
+    display: flex;
+    height: 100vh;
   }
-}
+    .container {
+     width: 50%;
+     height: 100vh;
+  }
+  
+  .s1 {
+    background-color:#fff;
+    padding: 30px;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.208);
+    width: 400px;
+    height: 60vh;
+    align-content: center;
+    margin-top: 200px;
+    color: #000000;
+    position: absolute;
+    left: 150px;
+  }
+  #Username ,#password {
+   width: calc(100% - 30px);
+    padding: 5px;
+   margin: 10px ;
+   border: 1px solid #ccc;
+   /* border-top: none;
+   border-left: none;
+   border-right: none; */
+   border-radius: 4px;
+   box-sizing: border-box;
+    }
+  #Login{
+    border: none;
+    background: linear-gradient(90deg,crimson,orange);
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px;
+    width: 80%;
+    cursor: pointer;
+    position: relative;
+    left: 36px;
+    top: 30px;
+  }
+  #Login:hover{
+    transform: scale(1.07);
+  }
+  @keyframes zoom-in-zoom-out {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.2);
+    }
+    100%{
+      transform: scale(1);
+    }
+    
+  }
+  #Login:hover{
+    background-color: black;
+  }
+  .E1{
+    padding: 10px;
+    align-items: center;
+     
+  }
+  #t1{
+    position: relative;
+    left: 10px;
+  } 
+  .container2{
+    width: 50%;
+    height:100vh;
+    
+  }
+  #imo1{
+    width: 100vh;
+  }
+  .row{
+    display: flex;
+    width: 500px;
+    position: relative;
+    top: 157px;
+    left: 100px;
+    justify-content: center;
+  }
+  #imo{
+    width:300px;
+  }
+  .reme{
+    position: relative;
+    top: 50px;
+    left: 30px;
+  
+  }
+  p{
+    position: absolute;
+    top: 389px;
+    left: 88px;
+  }
